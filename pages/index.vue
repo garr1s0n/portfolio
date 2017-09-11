@@ -8,7 +8,6 @@
       <h2 class="subtitle">
         Front End Developer portfolio SPA for Gary Wilpizeski
       </h2>
-      <typer/>
       <div class="links">
         <a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentation</a>
         <a href="/subpage" class="button--grey">Subpage Here</a>
@@ -20,12 +19,10 @@
 
 <script>
 import Logo from '~/components/Logo.vue'
-import Typer from '~/components/Typer.vue'
 
 export default {
   components: {
-    Logo,
-    Typer
+    Logo
   }
 
 }
