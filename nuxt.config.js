@@ -11,7 +11,8 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: '/assets/styles/skeleton.css' }
+      { rel: 'stylesheet', href: '/styles/normalize.css' },
+      { rel: 'stylesheet', href: '/styles/skeleton.css' }
     ]
   },
   /*
