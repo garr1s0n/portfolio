@@ -8,6 +8,7 @@
       <h2 class="subtitle">
         Front End Developer portfolio SPA for Gary Wilpizeski
       </h2>
+      <text-type/>
       <div class="links">
         <a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentation</a>
         <a href="/subpage" class="button--grey">Subpage Here</a>
@@ -19,10 +20,12 @@
 
 <script>
 import Logo from '~/components/Logo.vue'
+import TextType from '~/components/TextType.vue'
 
 export default {
   components: {
-    Logo
+    Logo,
+    TextType
   }
 
 }
