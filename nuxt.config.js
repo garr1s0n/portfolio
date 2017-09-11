@@ -3,14 +3,15 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'portfolio',
+    title: 'Gary Wilpizeski - Front End Developer from Philadelphia.',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Front End Developer portfolio SPA for Gary Wilpizeski' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: '/assets/styles/skeleton.css' }
     ]
   },
   /*
