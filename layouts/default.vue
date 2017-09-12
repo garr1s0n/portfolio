@@ -4,9 +4,12 @@
   </div>
 </template>
 
-<style>
+<style lang="less">
+@playfair: 'Playfair Display', serif;
+@raleway: 'Raleway', sans-serif;
+
 html {
-  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: @raleway;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -35,18 +38,21 @@ html {
   background-color: #3b8070;
 }
 
-.button--grey {
+.button--white {
   display: inline-block;
   border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
+  border: 1px solid #fff;
+  color: #fff;
   text-decoration: none;
   padding: 10px 30px;
+  transition: all .35s ease-in;
+}
+.button--white:not(:first-child) {
   margin-left: 15px;
 }
 
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+.button--white:hover {
+  color: rgba(125,185,232,1);
+  background-color: #fff;
 }
 </style>

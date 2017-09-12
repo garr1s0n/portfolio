@@ -1,60 +1,57 @@
 <template>
-  <section class="container">
-    <div>
-      <logo/>
-      <h1 class="title">
-        portfolio
-      </h1>
-      <h2 class="subtitle">
-        Front End Developer portfolio SPA for Gary Wilpizeski
-      </h2>
-      <text-type/>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentation</a>
-        <a href="/subpage" class="button--grey">Subpage Here</a>
-        <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a>
+  <section class="content">
+    <div class="container">
+      <div>
+        <h1 class="title">
+          gary<br>
+          wilpizeski
+        </h1>
+        <text-type/>
+        <p class="subtext">Portfolio &amp; other goodies coming soon.</p>
+        <div class="links">
+          <a href="mailto:gary.wilpizeski@gmail.com?Subject=Found%20Your%20Website%21%20Let%27s%20Talk%21" class="button--white">Contact</a>
+          <a href="https://github.com/garr1s0n/" target="_blank" class="button--white">GitHub</a>
+        </div>
       </div>
     </div>
   </section>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
 import TextType from '~/components/TextType.vue'
 
 export default {
   components: {
-    Logo,
     TextType
   }
 
 }
 </script>
 
-<style>
-.container {
+<style lang="less">
+@playfair: 'Playfair Display', serif;
+@raleway: 'Raleway', sans-serif;
+
+.content {
+  background: rgb(255,66,207);
+  background: -moz-linear-gradient(-45deg, rgba(255,66,207,1) 1%, rgba(125,185,232,1) 100%);
+  background: -webkit-linear-gradient(-45deg, rgba(255,66,207,1) 1%,rgba(125,185,232,1) 100%);
+  background: linear-gradient(135deg, rgba(255,66,207,1) 1%,rgba(125,185,232,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff42cf', endColorstr='#7db9e8',GradientType=1 );
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
 .title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
+  font-family: @playfair;
   display: block;
-  font-weight: 300;
+  font-weight: 900;
   font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+  font-size: 10vw;
+  line-height: 1;
+  color: #fff;
 }
 
 .links {

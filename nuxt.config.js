@@ -11,6 +11,7 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Playfair+Display:400,900|Raleway:200,400,400i,700,700i' },
       { rel: 'stylesheet', href: '/styles/normalize.css' },
       { rel: 'stylesheet', href: '/styles/skeleton.css' }
     ]
