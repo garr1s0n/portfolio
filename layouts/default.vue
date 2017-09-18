@@ -55,4 +55,11 @@ html {
   color: rgba(125,185,232,1);
   background-color: #fff;
 }
+
+@media screen and (max-width: 30em) {
+  .button--white {
+    font-size: .825em;
+    padding: .25em 1em;
+  }
+}
 </style>

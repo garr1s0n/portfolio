@@ -57,4 +57,15 @@ export default {
 .links {
   padding-top: 15px;
 }
+
+@media screen and (max-width: 40em) {
+  .title {
+    font-size: 80px;
+    font-size: 16vw;
+  }
+  p.subtext {
+    font-size: 7vw;
+    line-height: 1.1;
+  }
+}
 </style>

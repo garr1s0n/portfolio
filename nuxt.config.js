@@ -7,7 +7,7 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Front End Developer portfolio SPA for Gary Wilpizeski' }
+      { hid: 'description', name: 'description', content: 'Portfolio of Gary Wilpizeski - Front End Developer from Philadelphia, PA.' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -37,5 +37,8 @@ module.exports = {
         })
       }
     }
-  }
+  },
+  plugins: [
+    { src: '~plugins/ga.js', ssr: false }
+  ]
 }

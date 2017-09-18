@@ -56,4 +56,11 @@ export default {
         50% { opacity: 0.0; }
         100% { opacity: 1; }
     }
+
+    @media screen and (max-width: 40em) {
+        .typeHolder {
+            font-size: 30px;
+            font-size: 6.5vw;
+        }
+    }
 </style>
