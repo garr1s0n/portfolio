@@ -17,6 +17,12 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  background: rgb(255,66,207);
+  background: -moz-linear-gradient(-45deg, rgba(255,66,207,1) 1%, rgba(125,185,232,1) 100%);
+  background: -webkit-linear-gradient(-45deg, rgba(255,66,207,1) 1%,rgba(125,185,232,1) 100%);
+  background: linear-gradient(135deg, rgba(255,66,207,1) 1%,rgba(125,185,232,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff42cf', endColorstr='#7db9e8',GradientType=1 );
+  min-height: 100vh;
 }
 
 *, *:before, *:after {
