@@ -5,7 +5,7 @@
 </template>
 
 <style lang="less">
-@import url('../static/styles/base-styles.less');;
+@import url('../static/styles/base-styles.less');
 
 html {
   font-family: @raleway;
@@ -15,7 +15,6 @@ html {
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
   background: rgb(255,66,207);
   background: -moz-linear-gradient(-45deg, rgba(255,66,207,1) 1%, rgba(125,185,232,1) 100%);
   background: -webkit-linear-gradient(-45deg, rgba(255,66,207,1) 1%,rgba(125,185,232,1) 100%);

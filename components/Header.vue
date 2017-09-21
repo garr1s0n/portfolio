@@ -26,8 +26,7 @@ export default {
 </script>
 
 <<style lang="less">
-@playfair: 'Playfair Display', serif;
-@raleway: 'Raleway', sans-serif;
+@import url('../static/styles/base-styles.less');
 
 .title {
   font-family: @playfair;

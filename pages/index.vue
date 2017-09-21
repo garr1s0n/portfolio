@@ -16,8 +16,7 @@ export default {
 </script>
 
 <style lang="less">
-@playfair: 'Playfair Display', serif;
-@raleway: 'Raleway', sans-serif;
+@import url('../static/styles/base-styles.less');
 
 .content {
   min-height: 100vh;
