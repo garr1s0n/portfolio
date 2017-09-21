@@ -1,15 +1,15 @@
 <template>
   <section id="header-section" class="content">
-    <Header />
+    <HeaderSec />
   </section>
 </template>
 
 <script>
-import Header from '~/components/Header.vue'
+import HeaderSec from '~/components/Header-Section.vue'
 
 export default {
   components: {
-    Header
+    HeaderSec
   }
 
 }
