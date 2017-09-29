@@ -8,7 +8,7 @@
         <text-type/>
         <p class="subtext">Portfolio &amp; other goodies coming soon.</p>
         <div class="links">
-          <a href="mailto:gary.wilpizeski@gmail.com?Subject=Found%20Your%20Website%21%20Let%27s%20Talk%21" class="button--white">Contact</a>
+          <a href="javascript:void(0);" class="button--white" @click="contactScroll">Contact</a>
           <a href="https://github.com/garr1s0n/" target="_blank" class="button--white">GitHub</a>
         </div>
       </div>
@@ -17,15 +17,27 @@
 
 <script>
 import TextType from '~/components/TextType.vue'
+import VueScrollTo from 'vue-scrollto'
 
 export default {
   components: {
     TextType
+  },
+  methods: {
+    contactScroll: function () {
+      var scrollOptions = {
+        container: 'body',
+        easing: 'ease-in'
+      }
+      var scrollElement = document.getElementById('contact-section')
+      var scroller = VueScrollTo.scrollTo(scrollElement, 450, scrollOptions)
+      console.log(scroller)
+    }
   }
 }
 </script>
 
-<<style lang="less">
+<<style lang="less" scoped>
 @import url('../static/styles/base-styles.less');
 
 .title {

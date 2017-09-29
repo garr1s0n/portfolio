@@ -1,15 +1,22 @@
 <template>
-  <section id="header-section" class="content">
-    <HeaderSec />
+  <section>
+    <div id="header-section" class="content">
+      <HeaderSec />
+    </div>
+    <div id="contact-section" class="content">
+      <contact />
+    </div>
   </section>
 </template>
 
 <script>
 import HeaderSec from '~/components/Header-Section.vue'
+import Contact from '~/components/Contact.vue'
 
 export default {
   components: {
-    HeaderSec
+    HeaderSec,
+    Contact
   }
 
 }
